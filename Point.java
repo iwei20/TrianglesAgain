@@ -22,7 +22,7 @@ public class Point{
     }  
 
     public double distanceTo(Point other) {
-        return Math.sqrt((x - other.x) * (x - other.x) + (y - other.y) * (y - other.y));
+        return Math.sqrt((x - other.getX()) * (x - other.getX()) + (y - other.getY()) * (y - other.getY()));
     }
 
     public boolean equals(Point other) {
