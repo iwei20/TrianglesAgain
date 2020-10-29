@@ -26,4 +26,13 @@ public class Triangle {
                         (s - v2.distanceTo(v3)) * 
                         (s - v3.distanceTo(v1)));
     }
+
+    public String classify() {
+        double s1 = Math.round(10000 * v1.distanceTo(v2)) / 10000.0;
+        double s2 = Math.round(10000 * v2.distanceTo(v3)) / 10000.0;
+        double s3 = Math.round(10000 * v3.distanceTo(v1)) / 10000.0;
+        if(s1 == s2 && s2 == s3) return "equilateral";
+        if(s1 == s2 || s2 == s3) return "isosceles";
+        return "scalene";
+    }
 }
