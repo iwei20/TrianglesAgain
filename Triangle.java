@@ -45,4 +45,9 @@ public class Triangle {
         else if(index == 1) v2 = newP;
         else v3 = newP;
     }
+
+    public Point[] getVertices() {
+        return new Point[]{v1, v2, v3};
+    }
+
 }
